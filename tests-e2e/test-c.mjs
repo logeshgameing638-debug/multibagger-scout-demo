@@ -1,0 +1,23 @@
+import { boot, click, shot, waitForText, waitFor, evalAny, errors, sleep, page } from './lib-test.mjs';
+const browser = await boot();
+await click('[data-s="f02"]');
+await waitFor('#f02-sym');
+await evalAny(() => { document.getElementById('f02-sym').value = 'ALPHA'; });
+await click('[data-act="research"]');
+await waitForText('Agent execution', 120000);
+await page.setViewport({width: 1280, height: 2500});
+async function fullShot(name){ await sleep(600); await page.screenshot({path: `/tmp/mbsite/shots/${name}.png`}); console.log('shot:', name); }
+await fullShot('11-f02-chart-full');
+await click('[data-tabgroup="f02"][data-tab="Fundamental"]');
+await fullShot('12-f02-fundamental');
+await click('[data-tabgroup="f02"][data-tab="Report"]');
+await sleep(300);
+await click('[data-act="make_report"]');
+await waitForText('Download buttons for the files appear below', 60000);
+await fullShot('13-f02-report-full');
+await click('[data-s="f00"]');
+await waitForText('Central Command');
+await fullShot('14-f00-full');
+console.log('page errors:', errors.length ? errors : 'none');
+await browser.close();
+console.log('E2E-C DONE');

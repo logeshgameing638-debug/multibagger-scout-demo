@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+scout.db
+*.db
+backups/
+exports/*
+!exports/.gitkeep
+logs/*
+!logs/.gitkeep
+.pytest_cache/
+.streamlit/secrets.toml

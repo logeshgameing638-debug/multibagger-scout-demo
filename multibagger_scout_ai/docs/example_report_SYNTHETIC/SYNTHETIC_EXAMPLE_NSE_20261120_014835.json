@@ -1,0 +1,1400 @@
+{
+  "run_id": "9948a180b53d4f68a0daec1201533a55",
+  "symbol": "EXAMPLE",
+  "exchange": "NSE",
+  "generated_at": "2026-11-20T01:48:35.936949+00:00",
+  "provider": {
+    "name": "SYNTHETIC_TEST",
+    "fetched_at": "2026-11-20T01:48:35.947666+00:00",
+    "errors": {},
+    "is_synthetic": true,
+    "fetch_error": null,
+    "note": "SYNTHETIC TEST DATA"
+  },
+  "agents": {
+    "stock_scout": {
+      "agent": "stock_scout",
+      "status": "ok",
+      "data": {
+        "symbol": "EXAMPLE",
+        "exchange": "NSE",
+        "company_name": "Synthetic Test Industries Limited",
+        "sector": "Industrials",
+        "industry": "Synthetic",
+        "market_cap": 12166.164498483968,
+        "last_price": 121.66164498483967,
+        "last_price_date": "2026-11-19",
+        "avg_volume_20d": 3952140.0,
+        "avg_traded_value_20d_inr": 482116565.960942,
+        "liquidity_class": "HIGH",
+        "history_bars": 1500,
+        "history_start": "2021-02-19",
+        "availability": {
+          "annual_income": true,
+          "annual_balance": true,
+          "annual_cashflow": true,
+          "quarterly_income": true
+        },
+        "source": "SYNTHETIC_TEST",
+        "source_note": "SYNTHETIC TEST DATA",
+        "fetched_at": "2026-11-20T01:48:35.947666+00:00"
+      },
+      "missing": [],
+      "warnings": [],
+      "error": null,
+      "started_at": "2026-11-20T01:48:35.954834+00:00",
+      "finished_at": "2026-11-20T01:48:35.955268+00:00",
+      "duration_s": 0.0
+    },
+    "fundamental": {
+      "agent": "fundamental",
+      "status": "partial",
+      "data": {
+        "metrics": {
+          "sales_growth_1y": 0.1565217391304348,
+          "sales_cagr_3y": 0.15197785214739667,
+          "sales_cagr_5y": null,
+          "profit_growth_1y": 0.25,
+          "profit_cagr_3y": 0.23310603716523493,
+          "profit_cagr_5y": null,
+          "eps_growth_1y": 0.25000000000000006,
+          "roe": 0.16666666666666666,
+          "roce": 0.18333333333333332,
+          "operating_margin": 0.16541353383458646,
+          "net_margin": 0.11278195488721804,
+          "gross_margin": 0.37593984962406013,
+          "total_debt": 200.0,
+          "debt_to_equity": 0.2222222222222222,
+          "interest_coverage": 22.0,
+          "current_ratio": 2.0,
+          "working_capital": 300.0,
+          "operating_cash_flow": 160.0,
+          "free_cash_flow": 100.0,
+          "cash_conversion": 1.0666666666666667,
+          "shares_outstanding_growth": 0.0,
+          "latest_equity": 900.0,
+          "latest_net_income": 150.0,
+          "institutional_holding": 0.25,
+          "insider_holding_yahoo": null
+        },
+        "history": {
+          "revenue": {
+            "2026-03-31": 1330.0,
+            "2025-03-31": 1150.0,
+            "2024-03-31": 1000.0,
+            "2023-03-31": 870.0
+          },
+          "net_income": {
+            "2026-03-31": 150.0,
+            "2025-03-31": 120.0,
+            "2024-03-31": 95.0,
+            "2023-03-31": 80.0
+          },
+          "operating_income": {
+            "2026-03-31": 220.0,
+            "2025-03-31": 180.0,
+            "2024-03-31": 150.0,
+            "2023-03-31": 130.0
+          },
+          "operating_cash_flow": {
+            "2026-03-31": 160.0,
+            "2025-03-31": 130.0,
+            "2024-03-31": 100.0,
+            "2023-03-31": 90.0
+          },
+          "free_cash_flow": {
+            "2026-03-31": 100.0,
+            "2025-03-31": 80.0,
+            "2024-03-31": 60.0,
+            "2023-03-31": 50.0
+          },
+          "equity": {
+            "2026-03-31": 900.0,
+            "2025-03-31": 760.0,
+            "2024-03-31": 650.0,
+            "2023-03-31": 570.0
+          }
+        },
+        "quarterly": {
+          "revenue": {
+            "2026-03-31": 300.0,
+            "2025-12-31": 290.0,
+            "2025-09-30": 280.0,
+            "2025-06-30": 270.0,
+            "2025-03-31": 260.0
+          },
+          "net_income": {
+            "2026-03-31": 30.0,
+            "2025-12-31": 29.0,
+            "2025-09-30": 28.0,
+            "2025-06-30": 27.0,
+            "2025-03-31": 26.0
+          },
+          "revenue_yoy_latest_quarter": 0.15384615384615374
+        },
+        "red_flags": [],
+        "is_financial": false,
+        "annual_periods": 4,
+        "latest_annual_period": "2026-03-31"
+      },
+      "missing": [
+        "sales_cagr_5y: needs 6 annual periods; source gives fewer",
+        "profit_cagr_5y: needs 6 annual periods; source gives fewer",
+        "insider_holding_yahoo: not computable from available data",
+        "promoter_holding: not in Yahoo data; needs NSE/BSE shareholding-pattern connector (not built)",
+        "promoter_holding_change: same",
+        "promoter_pledge: same"
+      ],
+      "warnings": [
+        "Financial line-item mapping is unverified against live data; check data quality log on first run."
+      ],
+      "error": null,
+      "started_at": "2026-11-20T01:48:35.955279+00:00",
+      "finished_at": "2026-11-20T01:48:35.957043+00:00",
+      "duration_s": 0.002
+    },
+    "technical": {
+      "agent": "technical",
+      "status": "ok",
+      "data": {
+        "as_of": "2026-11-19",
+        "provisional_bar": null,
+        "daily": {
+          "ema20": 122.0927685472006,
+          "ema50": 121.08405621928324,
+          "ema100": 119.40673444597594,
+          "ema200": 115.27951291560754,
+          "sma20": 121.920813807712,
+          "sma50": 121.0190373038823,
+          "sma100": 119.8203300080483,
+          "sma200": 117.07641903060014,
+          "rsi14": 49.25271586832875,
+          "atr14": 1.79405844782634,
+          "vol_sma20": 3952140.0,
+          "rel_volume": 0.5323929394377361,
+          "close": 121.66164498483967,
+          "macd": 0.4123973887300849,
+          "macd_signal": 0.6514937300244474,
+          "macd_hist": -0.23909634129436252,
+          "adx": 12.352249581513322,
+          "plus_di": 34.17103834290073,
+          "minus_di": 29.831322575443632,
+          "bb_upper": 126.85892977776807,
+          "bb_lower": 116.98269783765592,
+          "bb_pct_b": 0.4737583296500241,
+          "bb_width": 0.08100529869894484,
+          "atr_pct": 0.014746294512538432,
+          "bars": 1500
+        },
+        "weekly": {
+          "ema20": 119.14007445441301,
+          "ema50": 112.93506271022271,
+          "ema100": 104.1456334272372,
+          "ema200": 95.50880268001768,
+          "sma20": 119.56375277323755,
+          "sma50": 113.56271549965457,
+          "sma100": 101.86283221063155,
+          "sma200": 86.2517004921175,
+          "rsi14": 54.66670849890383,
+          "atr14": 5.1109615155720745,
+          "vol_sma20": 19981863.45,
+          "rel_volume": 0.9743051970926534,
+          "close": 121.68091012867146,
+          "macd": 2.5087182214082446,
+          "macd_signal": 2.555092709825945,
+          "macd_hist": -0.0463744884177002,
+          "adx": 14.257851893591553,
+          "plus_di": 24.7273141460382,
+          "minus_di": 18.112652624450575,
+          "bb_upper": 125.44903226653096,
+          "bb_lower": 113.67847327994414,
+          "bb_pct_b": 0.6798688879471669,
+          "bb_width": 0.09844588107660562,
+          "atr_pct": 0.04200298559706275,
+          "bars": 300
+        },
+        "monthly": {
+          "ema20": 105.58261051520566,
+          "ema50": 94.31294812386822,
+          "ema100": null,
+          "ema200": null,
+          "sma20": 102.85278773922376,
+          "sma50": 85.4496300931772,
+          "sma100": null,
+          "sma200": null,
+          "rsi14": 64.02600009203576,
+          "atr14": 9.412634629667911,
+          "vol_sma20": 88854479.0,
+          "rel_volume": 1.0090846875117434,
+          "close": 119.18906440912014,
+          "macd": 9.851524818851743,
+          "macd_signal": 8.788236532203353,
+          "macd_hist": 1.0632882866483904,
+          "adx": 44.425576703168666,
+          "plus_di": 27.15790805243261,
+          "minus_di": 5.875125432861251,
+          "bb_upper": 130.2678738491448,
+          "bb_lower": 75.43770162930272,
+          "bb_pct_b": 0.7979431945680552,
+          "bb_width": 0.5330936907501257,
+          "atr_pct": 0.0789723006580432,
+          "bars": 69
+        },
+        "signals": {
+          "higher_high": true,
+          "higher_low": false,
+          "lower_high": false,
+          "lower_low": true,
+          "ema_order": {
+            "20>50": true,
+            "50>100": true,
+            "100>200": true
+          },
+          "support": 120.40137784490646,
+          "resistance": 122.44789163605495,
+          "prior_20d_high": 126.79434029414296,
+          "breakout_confirmed": false,
+          "breakdown": false,
+          "near_breakout": false,
+          "retest_of_breakout": false,
+          "failed_breakout": true,
+          "consolidation": false,
+          "rsi_divergence": null,
+          "updown_volume_ratio_20d": 1.0474315007236912,
+          "sma200_slope_20d": 0.012754990920919695,
+          "volatility_ann": 0.2112749681416664
+        },
+        "trend": {
+          "daily": "Bullish",
+          "weekly": "Bullish",
+          "monthly": "Bullish"
+        },
+        "levels": {
+          "note": "Research levels for context, not trade instructions.",
+          "entry_zone": [
+            121.19573932328744,
+            122.98979777111377
+          ],
+          "invalidation": 119.5043486209933,
+          "atr_risk_distance": 2.1572963638463705,
+          "atr_risk_pct": 0.01773193486012122
+        },
+        "short_term": {
+          "assessment": "Bullish",
+          "basis": [
+            "Daily trend Bullish",
+            "RSI14 49.3",
+            "MACD histogram negative"
+          ]
+        },
+        "long_term": {
+          "assessment": "Bullish",
+          "basis": [
+            "Weekly Bullish",
+            "Monthly Bullish",
+            "Price above SMA200"
+          ]
+        },
+        "limitations": [
+          "4h/1h data not available from this provider; VWAP not computed on daily bars."
+        ]
+      },
+      "missing": [],
+      "warnings": [],
+      "error": null,
+      "started_at": "2026-11-20T01:48:35.957055+00:00",
+      "finished_at": "2026-11-20T01:48:35.983937+00:00",
+      "duration_s": 0.027
+    },
+    "valuation": {
+      "agent": "valuation",
+      "status": "partial",
+      "data": {
+        "ratios": {
+          "pe": 20.0,
+          "forward_pe": 18.0,
+          "pb": 3.0,
+          "ev_ebitda": 12.0,
+          "ev_sales": 2.5,
+          "peg": null,
+          "dividend_yield": 0.016439034670698568
+        },
+        "method": "2-stage DCF on free cash flow (equity basis), 5-year projection + Gordon terminal value",
+        "assumptions": {
+          "discount_rate": 0.12,
+          "terminal_growth": 0.05,
+          "starting_fcf": 80.0,
+          "starting_fcf_basis": "average of last 3 fiscal years",
+          "base_growth": "sales growth 15.2%, clamped to 0-15%",
+          "bear_growth": "50% of base",
+          "bull_growth": "150% of base (max 20%)",
+          "projection_years": 5,
+          "shares_outstanding": 100.0
+        },
+        "scenarios": {
+          "bear": {
+            "growth": 0.075,
+            "value_per_share": 13.318295932251594
+          },
+          "base": {
+            "growth": 0.15,
+            "value_per_share": 18.02871827755222
+          },
+          "bull": {
+            "growth": 0.2,
+            "value_per_share": 21.886550246920915
+          }
+        },
+        "margin_of_safety": -5.748213772707409,
+        "assessment": "Expensive",
+        "reason": "Margin of safety = (base value - price) / base value",
+        "price": 121.66164498483967
+      },
+      "missing": [
+        "industry P/E",
+        "peer valuation",
+        "historical valuation band (need peer/history connectors; not built)",
+        "peg: not provided/meaningful"
+      ],
+      "warnings": [
+        "Illustrative model output from stated assumptions; not a price target or advice."
+      ],
+      "error": null,
+      "started_at": "2026-11-20T01:48:35.983951+00:00",
+      "finished_at": "2026-11-20T01:48:35.984022+00:00",
+      "duration_s": 0.0
+    },
+    "business": {
+      "agent": "business",
+      "status": "partial",
+      "data": {
+        "classification": "Strong business",
+        "basis": "Financial-quality proxy from reported statements (not a qualitative moat assessment)",
+        "checks": [
+          {
+            "check": "Returns on capital",
+            "passed": true,
+            "evidence": "ROCE 18.3% vs 15% threshold"
+          },
+          {
+            "check": "Operating margin stability",
+            "passed": true,
+            "evidence": "range 14.9% to 16.5% over 4 years"
+          },
+          {
+            "check": "Consistent sales growth",
+            "passed": true,
+            "evidence": "sales rose in 3 of 3 transitions"
+          },
+          {
+            "check": "Profits backed by cash",
+            "passed": true,
+            "evidence": "OCF/net profit 1.07"
+          },
+          {
+            "check": "Profitable every year on record",
+            "passed": true,
+            "evidence": "4 years checked"
+          }
+        ],
+        "evaluable_checks": 5,
+        "passed_checks": 5,
+        "moat": "Not assessed: no evidence on competitive advantage was collected",
+        "business_summary_source": "Yahoo Finance (company-provided)",
+        "business_summary": "Synthetic company for tests.",
+        "sector": "Industrials",
+        "industry": "Synthetic"
+      },
+      "missing": [
+        "market share",
+        "competitor comparison",
+        "customer concentration",
+        "supplier dependency",
+        "expansion projects",
+        "order book",
+        "management quality",
+        "corporate governance (need filings/announcement connectors; not built)"
+      ],
+      "warnings": [],
+      "error": null,
+      "started_at": "2026-11-20T01:48:35.984031+00:00",
+      "finished_at": "2026-11-20T01:48:35.984058+00:00",
+      "duration_s": 0.0
+    },
+    "news": {
+      "agent": "news",
+      "status": "partial",
+      "data": {
+        "items": [
+          {
+            "headline": "Synthetic Test Industries bags new contract - Fake Wire",
+            "url": "https://example.invalid/1",
+            "published_at": "2026-11-10T08:00:00+00:00",
+            "source": "Fake Wire",
+            "company": "Synthetic Test Industries Limited",
+            "title_key": "synthetictestindustriesbagsnewcontract",
+            "sentiment": "Positive",
+            "relevance": "high",
+            "verification_status": "unverified_headline"
+          }
+        ],
+        "counts": {
+          "Positive": 1,
+          "Negative": 0,
+          "Neutral": 0
+        },
+        "governance_hits": [],
+        "query_core_name": "synthetic test industries",
+        "source": "rss_news"
+      },
+      "missing": [
+        "official corporate announcements (NSE/BSE connector not built)",
+        "quarterly results/annual report detection"
+      ],
+      "warnings": [
+        "Headlines come from an aggregator feed and are unverified; official NSE/BSE announcements are not yet connected.",
+        "1 low-relevance headlines dropped (company name not in headline)"
+      ],
+      "error": null,
+      "started_at": "2026-11-20T01:48:35.984062+00:00",
+      "finished_at": "2026-11-20T01:48:35.984319+00:00",
+      "duration_s": 0.0
+    },
+    "risk": {
+      "agent": "risk",
+      "status": "partial",
+      "data": {
+        "risk_score": 10,
+        "risk_class": "MODERATE",
+        "findings": [
+          {
+            "category": "valuation",
+            "severity": "MODERATE",
+            "title": "Valuation looks expensive vs modelled value",
+            "evidence": "Margin of safety -574.8%",
+            "as_of": "2026-03-31",
+            "verified": true
+          }
+        ],
+        "assessed_checks": [
+          "cash_flow",
+          "dilution",
+          "governance_news",
+          "leverage",
+          "liquidity",
+          "profit_quality",
+          "valuation",
+          "volatility"
+        ],
+        "unassessed_checks": {
+          "promoter_pledge": "needs NSE/BSE shareholding pattern (connector not built)",
+          "promoter_selling": "needs NSE/BSE shareholding pattern (connector not built)",
+          "auditor_resignation_or_qualified_opinion": "needs official filings (connector not built); headline signals only",
+          "related_party_transactions": "needs annual report parsing (not built)",
+          "regulatory_issues": "needs SEBI/exchange feeds (not built); headline signals only",
+          "concentration_risk": "needs segment/customer data (not available)"
+        },
+        "scale": "0-100, higher = more risk",
+        "critical_alert": false
+      },
+      "missing": [
+        "promoter_pledge: needs NSE/BSE shareholding pattern (connector not built)",
+        "promoter_selling: needs NSE/BSE shareholding pattern (connector not built)",
+        "auditor_resignation_or_qualified_opinion: needs official filings (connector not built); headline signals only",
+        "related_party_transactions: needs annual report parsing (not built)",
+        "regulatory_issues: needs SEBI/exchange feeds (not built); headline signals only",
+        "concentration_risk: needs segment/customer data (not available)"
+      ],
+      "warnings": [],
+      "error": null,
+      "started_at": "2026-11-20T01:48:35.984325+00:00",
+      "finished_at": "2026-11-20T01:48:35.984345+00:00",
+      "duration_s": 0.0
+    },
+    "scoring": {
+      "agent": "scoring",
+      "status": "ok",
+      "data": {
+        "fundamental": {
+          "score": 58.9,
+          "max": 100,
+          "assessable_points": 75,
+          "coverage": 0.75,
+          "normalized_on_assessed": 78.5,
+          "components": [
+            {
+              "name": "Sales and profit growth",
+              "max": 20,
+              "points": 18.0,
+              "assessable": 20,
+              "parts": [
+                {
+                  "name": "Sales growth",
+                  "max": 10,
+                  "points": 8.0,
+                  "note": "3y CAGR 15.2%"
+                },
+                {
+                  "name": "Profit growth",
+                  "max": 10,
+                  "points": 10,
+                  "note": "3y CAGR 23.3%"
+                }
+              ]
+            },
+            {
+              "name": "ROE and ROCE",
+              "max": 15,
+              "points": 10.9,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "ROE",
+                  "max": 8,
+                  "points": 6.0,
+                  "note": "ROE 16.7%"
+                },
+                {
+                  "name": "ROCE",
+                  "max": 7,
+                  "points": 4.9,
+                  "note": "ROCE 18.3%"
+                }
+              ]
+            },
+            {
+              "name": "Debt and balance sheet",
+              "max": 15,
+              "points": 15,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "Debt/equity",
+                  "max": 7,
+                  "points": 7,
+                  "note": "D/E 0.22"
+                },
+                {
+                  "name": "Interest coverage",
+                  "max": 5,
+                  "points": 5,
+                  "note": "22.0x"
+                },
+                {
+                  "name": "Current ratio",
+                  "max": 3,
+                  "points": 3,
+                  "note": "2.00"
+                }
+              ]
+            },
+            {
+              "name": "Cash flow",
+              "max": 15,
+              "points": 15,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "Operating cash flow positive",
+                  "max": 5,
+                  "points": 5,
+                  "note": "OCF 160"
+                },
+                {
+                  "name": "Cash conversion",
+                  "max": 6,
+                  "points": 6,
+                  "note": "OCF/NI 1.07"
+                },
+                {
+                  "name": "Free cash flow positive",
+                  "max": 4,
+                  "points": 4,
+                  "note": "FCF 100"
+                }
+              ]
+            },
+            {
+              "name": "Management and promoter quality",
+              "max": 15,
+              "points": 0,
+              "assessable": 0,
+              "parts": [
+                {
+                  "name": "Promoter holding/pledge/governance",
+                  "max": 15,
+                  "points": null,
+                  "note": "data not available (shareholding connector not built)"
+                }
+              ]
+            },
+            {
+              "name": "Valuation",
+              "max": 10,
+              "points": 0.0,
+              "assessable": 10,
+              "parts": [
+                {
+                  "name": "Valuation vs modelled value",
+                  "max": 10,
+                  "points": 0.0,
+                  "note": "margin of safety -574.8%"
+                }
+              ]
+            },
+            {
+              "name": "Industry growth",
+              "max": 10,
+              "points": 0,
+              "assessable": 0,
+              "parts": [
+                {
+                  "name": "Industry growth",
+                  "max": 10,
+                  "points": null,
+                  "note": "no industry data collected"
+                }
+              ]
+            }
+          ]
+        },
+        "technical": {
+          "score": 48.99,
+          "max": 100,
+          "assessable_points": 100,
+          "coverage": 1.0,
+          "normalized_on_assessed": 49.0,
+          "components": [
+            {
+              "name": "Long-term trend",
+              "max": 20,
+              "points": 17,
+              "assessable": 20,
+              "parts": [
+                {
+                  "name": "Price above SMA200",
+                  "max": 8,
+                  "points": 8,
+                  "note": "close 121.66 vs SMA200 117.08"
+                },
+                {
+                  "name": "SMA200 rising",
+                  "max": 6,
+                  "points": 3,
+                  "note": "20-bar slope 1.3%"
+                },
+                {
+                  "name": "Weekly close above weekly EMA50",
+                  "max": 6,
+                  "points": 6,
+                  "note": "True"
+                }
+              ]
+            },
+            {
+              "name": "EMA alignment",
+              "max": 15,
+              "points": 15,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "EMA 20 > 50",
+                  "max": 5,
+                  "points": 5,
+                  "note": "aligned"
+                },
+                {
+                  "name": "EMA 50 > 100",
+                  "max": 5,
+                  "points": 5,
+                  "note": "aligned"
+                },
+                {
+                  "name": "EMA 100 > 200",
+                  "max": 5,
+                  "points": 5,
+                  "note": "aligned"
+                }
+              ]
+            },
+            {
+              "name": "Momentum",
+              "max": 15,
+              "points": 3,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "RSI14",
+                  "max": 8,
+                  "points": 3,
+                  "note": "RSI 49.3"
+                },
+                {
+                  "name": "MACD histogram",
+                  "max": 4,
+                  "points": 0,
+                  "note": "hist -0.239"
+                },
+                {
+                  "name": "ADX trend strength",
+                  "max": 3,
+                  "points": 0,
+                  "note": "ADX 12.4, +DI>-DI=True"
+                }
+              ]
+            },
+            {
+              "name": "Volume",
+              "max": 15,
+              "points": 3.99,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "Relative volume",
+                  "max": 8,
+                  "points": 0.0,
+                  "note": "0.53x prior 20-bar average"
+                },
+                {
+                  "name": "Up/down volume balance",
+                  "max": 7,
+                  "points": 3.99,
+                  "note": "up-day/down-day volume 1.05"
+                }
+              ]
+            },
+            {
+              "name": "Price structure",
+              "max": 10,
+              "points": 5,
+              "assessable": 10,
+              "parts": [
+                {
+                  "name": "HH/HL structure",
+                  "max": 10,
+                  "points": 5,
+                  "note": "HH=True HL=False LH=False LL=True"
+                }
+              ]
+            },
+            {
+              "name": "Support and resistance",
+              "max": 10,
+              "points": 5,
+              "assessable": 10,
+              "parts": [
+                {
+                  "name": "Support nearby",
+                  "max": 5,
+                  "points": 5,
+                  "note": "support 120.40 (0.7 ATR below)"
+                },
+                {
+                  "name": "Room to resistance",
+                  "max": 5,
+                  "points": 0,
+                  "note": "resistance 122.45 (0.4 ATR above)"
+                }
+              ]
+            },
+            {
+              "name": "Breakout confirmation",
+              "max": 15,
+              "points": 0,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "Breakout confirmation",
+                  "max": 15,
+                  "points": 0,
+                  "note": "breakdown or failed breakout"
+                }
+              ]
+            }
+          ]
+        },
+        "data_confidence": {
+          "score": 67.97,
+          "max": 100,
+          "assessable_points": 100,
+          "coverage": 1.0,
+          "normalized_on_assessed": 68.0,
+          "components": [
+            {
+              "name": "Source reliability",
+              "max": 20,
+              "points": 0,
+              "assessable": 20,
+              "parts": [
+                {
+                  "name": "Provider reliability",
+                  "max": 20,
+                  "points": 0,
+                  "note": "SYNTHETIC TEST DATA: not real market data"
+                }
+              ]
+            },
+            {
+              "name": "Data completeness",
+              "max": 30,
+              "points": 28.97,
+              "assessable": 30,
+              "parts": [
+                {
+                  "name": "Metrics available",
+                  "max": 30,
+                  "points": 28.97,
+                  "note": "28 of 29 expected metrics available"
+                }
+              ]
+            },
+            {
+              "name": "Reporting period",
+              "max": 15,
+              "points": 13.0,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "History depth",
+                  "max": 8,
+                  "points": 6.0,
+                  "note": "4 annual periods"
+                },
+                {
+                  "name": "Latest annual period recency",
+                  "max": 7,
+                  "points": 7,
+                  "note": "latest period 2026-03-31 (8 months old)"
+                }
+              ]
+            },
+            {
+              "name": "Freshness",
+              "max": 20,
+              "points": 20,
+              "assessable": 20,
+              "parts": [
+                {
+                  "name": "Last price bar age",
+                  "max": 20,
+                  "points": 20,
+                  "note": "1 days old"
+                }
+              ]
+            },
+            {
+              "name": "Cross-source consistency",
+              "max": 15,
+              "points": 6,
+              "assessable": 15,
+              "parts": [
+                {
+                  "name": "Cross-provider agreement",
+                  "max": 9,
+                  "points": 0,
+                  "note": "only one provider connected; cannot cross-check"
+                },
+                {
+                  "name": "Quoted price vs last close",
+                  "max": 3,
+                  "points": 3,
+                  "note": "within 5%: True"
+                },
+                {
+                  "name": "Market cap vs price x shares",
+                  "max": 3,
+                  "points": 3,
+                  "note": "within 10%: True"
+                }
+              ]
+            }
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "class": "MODERATE",
+          "scale": "0-100, higher = MORE risk (not a better investment)",
+          "drivers": [
+            "MODERATE: Valuation looks expensive vs modelled value"
+          ]
+        }
+      },
+      "missing": [],
+      "warnings": [],
+      "error": null,
+      "started_at": "2026-11-20T01:48:35.984351+00:00",
+      "finished_at": "2026-11-20T01:48:35.984462+00:00",
+      "duration_s": 0.0
+    }
+  },
+  "scores": {
+    "fundamental": {
+      "score": 58.9,
+      "max": 100,
+      "assessable_points": 75,
+      "coverage": 0.75,
+      "normalized_on_assessed": 78.5,
+      "components": [
+        {
+          "name": "Sales and profit growth",
+          "max": 20,
+          "points": 18.0,
+          "assessable": 20,
+          "parts": [
+            {
+              "name": "Sales growth",
+              "max": 10,
+              "points": 8.0,
+              "note": "3y CAGR 15.2%"
+            },
+            {
+              "name": "Profit growth",
+              "max": 10,
+              "points": 10,
+              "note": "3y CAGR 23.3%"
+            }
+          ]
+        },
+        {
+          "name": "ROE and ROCE",
+          "max": 15,
+          "points": 10.9,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "ROE",
+              "max": 8,
+              "points": 6.0,
+              "note": "ROE 16.7%"
+            },
+            {
+              "name": "ROCE",
+              "max": 7,
+              "points": 4.9,
+              "note": "ROCE 18.3%"
+            }
+          ]
+        },
+        {
+          "name": "Debt and balance sheet",
+          "max": 15,
+          "points": 15,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "Debt/equity",
+              "max": 7,
+              "points": 7,
+              "note": "D/E 0.22"
+            },
+            {
+              "name": "Interest coverage",
+              "max": 5,
+              "points": 5,
+              "note": "22.0x"
+            },
+            {
+              "name": "Current ratio",
+              "max": 3,
+              "points": 3,
+              "note": "2.00"
+            }
+          ]
+        },
+        {
+          "name": "Cash flow",
+          "max": 15,
+          "points": 15,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "Operating cash flow positive",
+              "max": 5,
+              "points": 5,
+              "note": "OCF 160"
+            },
+            {
+              "name": "Cash conversion",
+              "max": 6,
+              "points": 6,
+              "note": "OCF/NI 1.07"
+            },
+            {
+              "name": "Free cash flow positive",
+              "max": 4,
+              "points": 4,
+              "note": "FCF 100"
+            }
+          ]
+        },
+        {
+          "name": "Management and promoter quality",
+          "max": 15,
+          "points": 0,
+          "assessable": 0,
+          "parts": [
+            {
+              "name": "Promoter holding/pledge/governance",
+              "max": 15,
+              "points": null,
+              "note": "data not available (shareholding connector not built)"
+            }
+          ]
+        },
+        {
+          "name": "Valuation",
+          "max": 10,
+          "points": 0.0,
+          "assessable": 10,
+          "parts": [
+            {
+              "name": "Valuation vs modelled value",
+              "max": 10,
+              "points": 0.0,
+              "note": "margin of safety -574.8%"
+            }
+          ]
+        },
+        {
+          "name": "Industry growth",
+          "max": 10,
+          "points": 0,
+          "assessable": 0,
+          "parts": [
+            {
+              "name": "Industry growth",
+              "max": 10,
+              "points": null,
+              "note": "no industry data collected"
+            }
+          ]
+        }
+      ]
+    },
+    "technical": {
+      "score": 48.99,
+      "max": 100,
+      "assessable_points": 100,
+      "coverage": 1.0,
+      "normalized_on_assessed": 49.0,
+      "components": [
+        {
+          "name": "Long-term trend",
+          "max": 20,
+          "points": 17,
+          "assessable": 20,
+          "parts": [
+            {
+              "name": "Price above SMA200",
+              "max": 8,
+              "points": 8,
+              "note": "close 121.66 vs SMA200 117.08"
+            },
+            {
+              "name": "SMA200 rising",
+              "max": 6,
+              "points": 3,
+              "note": "20-bar slope 1.3%"
+            },
+            {
+              "name": "Weekly close above weekly EMA50",
+              "max": 6,
+              "points": 6,
+              "note": "True"
+            }
+          ]
+        },
+        {
+          "name": "EMA alignment",
+          "max": 15,
+          "points": 15,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "EMA 20 > 50",
+              "max": 5,
+              "points": 5,
+              "note": "aligned"
+            },
+            {
+              "name": "EMA 50 > 100",
+              "max": 5,
+              "points": 5,
+              "note": "aligned"
+            },
+            {
+              "name": "EMA 100 > 200",
+              "max": 5,
+              "points": 5,
+              "note": "aligned"
+            }
+          ]
+        },
+        {
+          "name": "Momentum",
+          "max": 15,
+          "points": 3,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "RSI14",
+              "max": 8,
+              "points": 3,
+              "note": "RSI 49.3"
+            },
+            {
+              "name": "MACD histogram",
+              "max": 4,
+              "points": 0,
+              "note": "hist -0.239"
+            },
+            {
+              "name": "ADX trend strength",
+              "max": 3,
+              "points": 0,
+              "note": "ADX 12.4, +DI>-DI=True"
+            }
+          ]
+        },
+        {
+          "name": "Volume",
+          "max": 15,
+          "points": 3.99,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "Relative volume",
+              "max": 8,
+              "points": 0.0,
+              "note": "0.53x prior 20-bar average"
+            },
+            {
+              "name": "Up/down volume balance",
+              "max": 7,
+              "points": 3.99,
+              "note": "up-day/down-day volume 1.05"
+            }
+          ]
+        },
+        {
+          "name": "Price structure",
+          "max": 10,
+          "points": 5,
+          "assessable": 10,
+          "parts": [
+            {
+              "name": "HH/HL structure",
+              "max": 10,
+              "points": 5,
+              "note": "HH=True HL=False LH=False LL=True"
+            }
+          ]
+        },
+        {
+          "name": "Support and resistance",
+          "max": 10,
+          "points": 5,
+          "assessable": 10,
+          "parts": [
+            {
+              "name": "Support nearby",
+              "max": 5,
+              "points": 5,
+              "note": "support 120.40 (0.7 ATR below)"
+            },
+            {
+              "name": "Room to resistance",
+              "max": 5,
+              "points": 0,
+              "note": "resistance 122.45 (0.4 ATR above)"
+            }
+          ]
+        },
+        {
+          "name": "Breakout confirmation",
+          "max": 15,
+          "points": 0,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "Breakout confirmation",
+              "max": 15,
+              "points": 0,
+              "note": "breakdown or failed breakout"
+            }
+          ]
+        }
+      ]
+    },
+    "data_confidence": {
+      "score": 67.97,
+      "max": 100,
+      "assessable_points": 100,
+      "coverage": 1.0,
+      "normalized_on_assessed": 68.0,
+      "components": [
+        {
+          "name": "Source reliability",
+          "max": 20,
+          "points": 0,
+          "assessable": 20,
+          "parts": [
+            {
+              "name": "Provider reliability",
+              "max": 20,
+              "points": 0,
+              "note": "SYNTHETIC TEST DATA: not real market data"
+            }
+          ]
+        },
+        {
+          "name": "Data completeness",
+          "max": 30,
+          "points": 28.97,
+          "assessable": 30,
+          "parts": [
+            {
+              "name": "Metrics available",
+              "max": 30,
+              "points": 28.97,
+              "note": "28 of 29 expected metrics available"
+            }
+          ]
+        },
+        {
+          "name": "Reporting period",
+          "max": 15,
+          "points": 13.0,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "History depth",
+              "max": 8,
+              "points": 6.0,
+              "note": "4 annual periods"
+            },
+            {
+              "name": "Latest annual period recency",
+              "max": 7,
+              "points": 7,
+              "note": "latest period 2026-03-31 (8 months old)"
+            }
+          ]
+        },
+        {
+          "name": "Freshness",
+          "max": 20,
+          "points": 20,
+          "assessable": 20,
+          "parts": [
+            {
+              "name": "Last price bar age",
+              "max": 20,
+              "points": 20,
+              "note": "1 days old"
+            }
+          ]
+        },
+        {
+          "name": "Cross-source consistency",
+          "max": 15,
+          "points": 6,
+          "assessable": 15,
+          "parts": [
+            {
+              "name": "Cross-provider agreement",
+              "max": 9,
+              "points": 0,
+              "note": "only one provider connected; cannot cross-check"
+            },
+            {
+              "name": "Quoted price vs last close",
+              "max": 3,
+              "points": 3,
+              "note": "within 5%: True"
+            },
+            {
+              "name": "Market cap vs price x shares",
+              "max": 3,
+              "points": 3,
+              "note": "within 10%: True"
+            }
+          ]
+        }
+      ]
+    },
+    "risk": {
+      "score": 10,
+      "class": "MODERATE",
+      "scale": "0-100, higher = MORE risk (not a better investment)",
+      "drivers": [
+        "MODERATE: Valuation looks expensive vs modelled value"
+      ]
+    }
+  },
+  "horizon_scores": {
+    "long_term": 55.93,
+    "short_term": 51.96,
+    "balanced": 53.94,
+    "formula": "long=0.7F+0.3T; short=0.7T+0.3F; balanced=0.5*long+0.5*short"
+  },
+  "tags": [
+    {
+      "tag": "High-quality business",
+      "reason": "5 of 5 financial-quality checks passed (proxy)"
+    },
+    {
+      "tag": "Potential multibagger candidate (research hypothesis)",
+      "reason": "3y sales CAGR 15%, profit CAGR 23%, ROCE 18%, acceptable leverage, risk MODERATE; NOT a prediction"
+    }
+  ],
+  "warnings": [
+    "SYNTHETIC TEST DATA: not real market data."
+  ],
+  "data_quality": [],
+  "narrative": {
+    "short_term": "Daily trend Bullish; short-term research score 52.0. Daily trend Bullish; RSI14 49.3; MACD histogram negative",
+    "long_term": "Long-term trend Bullish; long-term research score 55.9. Weekly Bullish; Monthly Bullish; Price above SMA200",
+    "thesis": [
+      "3y sales CAGR 15%, profit CAGR 23%, ROCE 18%, acceptable leverage, risk MODERATE; NOT a prediction",
+      "Supporting evidence: Sales growth (3y CAGR 15.2%); Profit growth (3y CAGR 23.3%); ROE (ROE 16.7%); Debt/equity (D/E 0.22)",
+      "Weak/absent evidence: Valuation vs modelled value (margin of safety -574.8%); MACD histogram (hist -0.239); ADX trend strength (ADX 12.4, +DI>-DI=True); Relative volume (0.53x prior 20-bar average)",
+      "This is a research hypothesis from limited free data, not advice or a forecast."
+    ],
+    "invalidation": [
+      "Technical: a completed daily close below 119.50 invalidates the current chart setup.",
+      "Fundamental: operating cash flow turns negative, or debt/equity rises above 1.0.",
+      "Fundamental: sales decline in two consecutive fiscal years.",
+      "Risk: risk class escalates to HIGH or CRITICAL.",
+      "Governance: official filings confirm an auditor resignation, qualified opinion or promoter-pledge invocation."
+    ],
+    "missing_evidence": [
+      "[fundamental] sales_cagr_5y: needs 6 annual periods; source gives fewer",
+      "[fundamental] profit_cagr_5y: needs 6 annual periods; source gives fewer",
+      "[fundamental] insider_holding_yahoo: not computable from available data",
+      "[fundamental] promoter_holding: not in Yahoo data; needs NSE/BSE shareholding-pattern connector (not built)",
+      "[fundamental] promoter_holding_change: same",
+      "[fundamental] promoter_pledge: same",
+      "[valuation] industry P/E",
+      "[valuation] peer valuation",
+      "[valuation] historical valuation band (need peer/history connectors; not built)",
+      "[valuation] peg: not provided/meaningful",
+      "[business] market share",
+      "[business] competitor comparison",
+      "[business] customer concentration",
+      "[business] supplier dependency",
+      "[business] expansion projects",
+      "[business] order book",
+      "[business] management quality",
+      "[business] corporate governance (need filings/announcement connectors; not built)",
+      "[news] official corporate announcements (NSE/BSE connector not built)",
+      "[news] quarterly results/annual report detection",
+      "[risk] promoter_pledge: needs NSE/BSE shareholding pattern (connector not built)",
+      "[risk] promoter_selling: needs NSE/BSE shareholding pattern (connector not built)",
+      "[risk] auditor_resignation_or_qualified_opinion: needs official filings (connector not built); headline signals only",
+      "[risk] related_party_transactions: needs annual report parsing (not built)",
+      "[risk] regulatory_issues: needs SEBI/exchange feeds (not built); headline signals only",
+      "[risk] concentration_risk: needs segment/customer data (not available)"
+    ]
+  }
+}
