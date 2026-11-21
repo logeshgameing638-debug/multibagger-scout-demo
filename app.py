@@ -9,7 +9,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Multibagger Scout AI", layout="wide", initial_sidebar_state="collapsed")
 
-for _k in ("DATABASE_URL", "APP_PASSWORD", "NSE_EQUITY_LIST_URL", "EXPORT_DIR", "NTFY_TOPIC", "NTFY_SERVER", "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID",
+for _k in ("SCOUT_PROVIDER", "SCOUT_NEWS", "SCOUT_ISOLATION", "DATABASE_URL", "APP_PASSWORD", "NSE_EQUITY_LIST_URL", "EXPORT_DIR", "NTFY_TOPIC", "NTFY_SERVER", "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID",
            "SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASSWORD", "SMTP_FROM", "SMTP_TO", "WEBHOOK_URL"):
     if _k not in os.environ:
         try:
