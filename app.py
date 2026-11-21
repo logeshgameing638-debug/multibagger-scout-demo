@@ -52,8 +52,8 @@ event = comp(boot={"floors": handler.FLOOR_NAMES, "synthetic": handler.SYNTHETIC
 if event and event.get("nonce") != st.session_state.seen:
     st.session_state.seen = event.get("nonce")
     try:
-        if handler.ISOLATION and not (event.get("vid") or "").strip():
-            event["vid"] = st.session_state.visitor_id  # the component's first call can race the boot args; the session id is the authority anyway
+        if handler.ISOLATION:
+            event["vid"] = st.session_state.visitor_id  # always bind to the server-side session id; a client-supplied id must never select another visitor's workspace
         data = handler.dispatch(event, st.session_state)
     except Exception as exc:
         data = {"error": f"{type(exc).__name__}: {exc}"}
